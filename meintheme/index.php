@@ -16,8 +16,13 @@ Est-ce qu'il y a des articles
 <!-- Tans qu'il y a des articles-->
 <!-- the_post() récupére ce contenu de ce post -->
     <?php while (have_posts()): the_post();?>
-        <!-- La fonction the_title() récupère le titre de l'article -->
-        <li><?php the_title() ?>-<?php the_author() ?>/'ID<?php the_ID()?></li>
+        <!-- La fonction the_permalink() est le liens vers l'article -->
+        <li>
+            <a href="<?php the_permalink() ?>"> 
+            <!-- La fonction the_title() récupère le titre de l'article -->
+            <?php the_title() ?>
+            </a>
+        -<?php the_author() ?>/'ID<?php the_ID()?></li>
     <?php endwhile ?>
     </ul>
 <!-- S'il n'y a pas d'articles -->
