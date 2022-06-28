@@ -31,8 +31,12 @@ Est-ce qu'il y a des articles
                 <!-- the_content() récupére le contenu de ce post -->
                 <?php the_content() ?></p>
             </div>
+
+            <!-- the_ID() récupére l'ID' de ce post -->
             <h6>ID <?php the_ID() ?></h6>
-     
+
+            <!-- the_category() récupére les catégories attribuées à ce post -->   
+            <h2><?php the_category() ?></h2>
         <?php endwhile ?>
     </div>
 
