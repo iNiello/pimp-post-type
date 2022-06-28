@@ -21,7 +21,7 @@ Est-ce qu'il y a des articles
             <div class="col">
 
                 <div class="card h-100 text-center" style=" border-radius: 15px;">
-                <?php the_post_thumbnail('post-thumbnail', ['classe'=> ' bd-placeholder-img rounded-circle img-fluid card-img-top', 'alt' => 'avatard de profile']); ?>
+                <?php the_post_thumbnail('post-thumbnail', ['classe'=> ' mx-auto d-block rounded-circle img-fluid card-img-top', 'alt' => 'avatard de profile']); ?>
                     <div class="card-body">
                         <h5 class="card-title"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h5>
                         <h6 class="card-subtitle mb-2 text-muted"><?php the_category() ?></h6>
