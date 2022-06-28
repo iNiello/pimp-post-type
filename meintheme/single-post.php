@@ -35,6 +35,10 @@ Est-ce qu'il y a des articles
                 <!-- the_tags() récupére les étiquettes  de ce post -->
                 <p><?php the_tags(); ?></p>
             </div>
+            <div class="col-3">
+                <!-- the_tags() récupére les secondes étiquettes  de ce post -->
+                <p><?php the_tags(); ?></p>
+            </div>
             <!-- the_ID() récupére l'ID' de ce post -->
             <h6>ID <?php the_ID() ?></h6>
 
