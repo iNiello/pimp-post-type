@@ -4,8 +4,10 @@
 function meintheme_mon_titre_de_page_article()
 {
     
-    // récupére le titre de la page ou de l'article
+    // récupére le titre de la page ou de l'article et l'ajoute au theme
     add_theme_support('title-tag');
+    // donne la possibilité de mettre/ajoute au theme une limage en Une de la page ou de l'article
+    add_theme_support( 'post-thumbnails' );
 }
 
 // Mettre le cdn de bootstrap de manière propre
