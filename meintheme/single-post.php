@@ -13,25 +13,29 @@ Est-ce qu'il y a des articles
 -->
 <?php if (have_posts()) : ?>
     <!-- Tans qu'il y a des articles-->
-
+    <div class="row">
         <!-- the_post() récupére ce contenu de ce post -->
         <?php while (have_posts()) : the_post(); ?>
-            <!-- 
+            <div class="col-3">
+                <!-- 
                 La fonction the_post_thumbnail_url récupère l'url de l'image en une de l'articleet 
             donne plus de flexibilité pour la mise en forme 
             -->
-             <img src="<?php the_post_thumbnail_url() ?>" alt="avatard de profile" class= "mx-auto d-block rounded-circle img-fluid"> 
-            <!-- the_title() récupére ce titre de ce post -->
-            <h1 class="text-center"><?php the_title() ?></h1>
+                <img src="<?php the_post_thumbnail_url() ?>" alt="avatard de profile" class="mx-auto d-block rounded-circle img-fluid">
+            </div>
+            <div class="col-3">
 
-            <!-- the_content() récupére le contenu de ce post -->
-            <?php the_content() ?>
+                <!-- the_title() récupére ce titre de ce post -->
+                <h1><?php the_title() ?></h1>
 
+                <!-- the_content() récupére le contenu de ce post -->
+                <?php the_content() ?></p>
+            </div>
         <?php endwhile ?>
-   
-    <!-- S'il n'y a pas d'articles -->
-<?php else : ?>
+    </div>
 
+<?php else : ?>
+    <!-- S'il n'y a pas d'articles -->
 <?php endif; ?>
 
 <!-- récupère le footer -->
