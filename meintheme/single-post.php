@@ -31,11 +31,14 @@ Est-ce qu'il y a des articles
                 <!-- the_content() récupére le contenu de ce post -->
                 <?php the_content() ?></p>
             </div>
-
+            <div class="col-3">
+                <!-- the_tags() récupére les étiquettes  de ce post -->
+                <p><?php the_tags(); ?></p>
+            </div>
             <!-- the_ID() récupére l'ID' de ce post -->
             <h6>ID <?php the_ID() ?></h6>
 
-            <!-- the_category() récupére les catégories attribuées à ce post -->   
+            <!-- the_category() récupére les catégories attribuées à ce post -->
             <h2><?php the_category() ?></h2>
         <?php endwhile ?>
     </div>
