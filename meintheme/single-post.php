@@ -31,6 +31,8 @@ Est-ce qu'il y a des articles
                 <!-- the_content() récupére le contenu de ce post -->
                 <?php the_content() ?></p>
             </div>
+            <h6>ID <?php the_ID() ?></h6>
+     
         <?php endwhile ?>
     </div>
 
