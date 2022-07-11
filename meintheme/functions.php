@@ -38,10 +38,10 @@ function meintheme_menu_class(array $classes): array
 }
 
 // ajoute aux liens menu des attribus la classe nav-link de bootstrap
-function meintheme_menu_link_class($attrs)
+function meintheme_menu_link_class($atts)
 {
-    $attrs['class'] = 'nav-link';
-    return $attrs;
+    $atts['class'] = 'nav-link';
+    return $atts;
 }
 
 
