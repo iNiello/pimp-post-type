@@ -30,14 +30,14 @@ function meintheme_bootstrap_css_js(){
     wp_enqueue_script('bootstrap');
 }
 
-// ajoute au menu la classe nav-item de bootstrap 
-function meintheme_menu_class($classes)
+// ajoute au menu le classes nav-item de bootstrap [tableau de classe]
+function meintheme_menu_class(array $classes): array
 {
     $classes[] = 'nav-item';
     return $classes;
 }
 
-// ajoute aux liens menu la classe nav-link de bootstrap
+// ajoute aux liens menu des attribu la classe nav-link de bootstrap
 function meintheme_menu_link_class($attrs)
 {
     $attrs['class'] = 'nav-link';

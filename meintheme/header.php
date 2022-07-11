@@ -22,7 +22,7 @@
        //ne pas vouloir le container autour du <ul> de Bootstrap (caontainer false) 
         'container' => false,
         // ajouter les classes que l'on souhaite pour ici changer  de celles l'<ul>  de WP
-        'menu_class' => 'navbar-nav mr-auto'
+        'menu_class' => 'navbar-nav me-auto mb-2 mb-lg-0'
         ]) ?>
       <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
